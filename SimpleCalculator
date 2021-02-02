@@ -1,0 +1,47 @@
+# This is a simple calculator that adds, subtracts, multiplies and divides 3 numbers
+
+def add(x,y,z):
+  return x + y + z;
+
+def sub(x,y,z):
+  return x - y - z;
+
+def multiply(x,y,z):
+  return x * y * z;
+
+def divide(x,y,z):
+  return x / y / z;
+
+print('Welcome to the Africode Calculator!')
+print('Kindly pick one of the following choices:')
+print('1. Addition')
+print('2. Division')
+print('3. Multiplication')
+print('4. Division')
+ 
+while True: 
+    choice = input ('Enter your choice of operation: ') 
+    
+    if choice in ('1','2','3','4'):
+        num1 = input('Enter first number: ')
+        num2 = input('Enter second number: ')
+        num3 = input('Enter third number: ')
+        
+        if choice == '1':
+            print(num1, "+", num2, "+", num3, "=", add(num1, num2, num3))
+
+        elif choice == '2':
+            print(num1, "-", num2, "-", num3, "=", sub(num1, num2, num3))
+
+        elif choice == '3':
+            print(num1, "*", num2,"*", num3, "=", multiply(num1, num2, num3))
+
+        elif choice == '4':
+            print(num1, "/", num2, "/", num3, "=", divide(num1, num2, num3))
+        break
+    else:
+        print("Invalid Input")
+
+
+              
+
